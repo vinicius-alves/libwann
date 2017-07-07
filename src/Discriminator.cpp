@@ -1,8 +1,8 @@
-/*
- * Discriminator.cpp
- *
- *  Created on: Oct 2, 2015
- *      Author: fabricio
+/**
+ * @file   Discriminator.cpp
+ * @Author fabricio
+ * @date   Outubro 2, 2015
+ * @brief  Arquivo de implementação da classe Discriminator.
  */
 
 #include "../include/Discriminator.hpp"
@@ -14,6 +14,14 @@
 using namespace std;
 using namespace wann;
 
+/**
+ * Calcula o número de objetos do tipo Memory que serão criados, para isto,
+ * utiliza a divisão do membro interno retinaLength pelo outro membro numBitsAddr.
+ * Se a divisão é inteira, cria o valor da divisão em objetos do tipo Memory,
+ * e os adiciona ao membro interno memories.
+ * Se há resto na divisão, faz com que a última memória criada seja endereçada
+ * pela quantidade de bits representados pelo resto.
+ */
 Discriminator::Discriminator(int retinaLength, 
                              int numBits,
                              vector<int> memoryAddressMapping, 
@@ -25,7 +33,6 @@ Discriminator::Discriminator(int retinaLength,
   isCummulative(isCummulative),
   ignoreZeroAddr(ignoreZeroAddr)
 {
-
     numMemories = (int) ceil(((float)retinaLength)/(float)numBits);
     bool hasRestMemory = ((retinaLength % numBits) > 0) ? true : false;
 
@@ -45,6 +52,9 @@ Discriminator::Discriminator(int retinaLength,
     }
 }
 
+/**
+ * Deleta dinamicamente todas as memórias associadas ao Discriminator.
+ */
 Discriminator::~Discriminator(void)
 {
     for(int i = 0; i < memories.size(); i++)
@@ -53,7 +63,12 @@ Discriminator::~Discriminator(void)
     }
 }
 
-
+/**
+ * Segmenta a entrada em porções definidas pelo membro interno numBitsAddr.
+ * O acesso a retina é chaveado pelo membro interno memoryAddressMapping.
+ * Assim, cada grupo de bits, com comprimento numBitsAddr é relacionado com um objeto Memory.
+ * Em seguida, se incrementa em 1, no objeto Memory associado, o endereço chaveado pelo grupo de bits anterior.
+ */
 void Discriminator::addTrainning(const vector<int> &retina)
 {
     int memIndex;
@@ -97,6 +112,14 @@ void Discriminator::addTrainning(const vector<int> &retina)
     }
 }
 
+/**
+ * Cria um vetor de inteiros, result, a ser retornado pelo método.
+ * Segmenta a entrada em porções definidas pelo membro interno numBitsAddr.
+ * O acesso a retina é chaveado pelo membro interno memoryAddressMapping.
+ * Assim, cada grupo de bits, com comprimento numBitsAddr é relacionado com um objeto Memory.
+ * Em seguida, obtém o conteúdo do objeto Memory associado, endereçado pelo grupo de bits anterior.
+ * Adiciona este conteúdo ao vetor results, para cada memória associada.
+ */
 vector<int> Discriminator::predict(const vector<int> &retina)
 {
     long long addr;
