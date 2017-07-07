@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>libwann: Referência à classe wann::WiSARD</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libwann
+   </div>
+   <div id="projectbrief">c++ Weightless Artificial Neural Network library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;das&#160;estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="functions.html"><span>Campos&#160;de&#160;dados</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacewann.html">wann</a></li><li class="navelem"><a class="el" href="classwann_1_1WiSARD.html">WiSARD</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência à classe wann::WiSARD</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="WiSARD_8hpp_source.html">WiSARD.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:ab414f45976b8ae3ed0e9846348797aff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#ab414f45976b8ae3ed0e9846348797aff">WiSARD</a> (int <a class="el" href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">retinaLength</a>, int <a class="el" href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">numBitsAddr</a>, bool <a class="el" href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">useBleaching</a>=true, float <a class="el" href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">confidenceThreshold</a>=0.1, int <a class="el" href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">defaultBleaching_b</a>=1, bool <a class="el" href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">randomizePositions</a>=true, bool <a class="el" href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">isCummulative</a>=true, bool <a class="el" href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">ignoreZeroAddr</a>=false)</td></tr>
+<tr class="memdesc:ab414f45976b8ae3ed0e9846348797aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe.  <a href="#ab414f45976b8ae3ed0e9846348797aff">Mais...</a><br /></td></tr>
+<tr class="separator:ab414f45976b8ae3ed0e9846348797aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e42ac67bc012126c510f8d09af933fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a8e42ac67bc012126c510f8d09af933fd">~WiSARD</a> (void)</td></tr>
+<tr class="memdesc:a8e42ac67bc012126c510f8d09af933fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor da classe.  <a href="#a8e42ac67bc012126c510f8d09af933fd">Mais...</a><br /></td></tr>
+<tr class="separator:a8e42ac67bc012126c510f8d09af933fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c85d7e7ffc3919642249184d91f5740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a3c85d7e7ffc3919642249184d91f5740">fit</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X, const std::vector&lt; std::string &gt; &amp;y)</td></tr>
+<tr class="memdesc:a3c85d7e7ffc3919642249184d91f5740"><td class="mdescLeft">&#160;</td><td class="mdescRight">Método responsável pela criação e treinamento de objetos do tipo <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a>, associados as entradas.  <a href="#a3c85d7e7ffc3919642249184d91f5740">Mais...</a><br /></td></tr>
+<tr class="separator:a3c85d7e7ffc3919642249184d91f5740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af077c8ed75a22a62c290392c28944fd3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#af077c8ed75a22a62c290392c28944fd3">predict</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X)</td></tr>
+<tr class="memdesc:af077c8ed75a22a62c290392c28944fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleciona uma label para cada entrada, na qual a label selecionado teve maior porcentagem de memórias ativadas.  <a href="#af077c8ed75a22a62c290392c28944fd3">Mais...</a><br /></td></tr>
+<tr class="separator:af077c8ed75a22a62c290392c28944fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b34db8c0236ef3845a446be8f63111"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unordered_map&lt; std::string, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#ae1b34db8c0236ef3845a446be8f63111">predictProba</a> (const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X)</td></tr>
+<tr class="memdesc:ae1b34db8c0236ef3845a446be8f63111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a porcentagem de memórias ativadas para cada discriminador de cada entrada da matriz X.  <a href="#ae1b34db8c0236ef3845a446be8f63111">Mais...</a><br /></td></tr>
+<tr class="separator:ae1b34db8c0236ef3845a446be8f63111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a5c42ea121c5a5dc7f55af6e4b674f3e5"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a5c42ea121c5a5dc7f55af6e4b674f3e5">applyBleaching</a> (std::unordered_map&lt; std::string, float &gt; &amp;result, std::unordered_map&lt; std::string, std::vector&lt; int &gt;&gt; &amp;memoryResult)</td></tr>
+<tr class="memdesc:a5c42ea121c5a5dc7f55af6e4b674f3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsável pela implmentação da técnica de bleaching.  <a href="#a5c42ea121c5a5dc7f55af6e4b674f3e5">Mais...</a><br /></td></tr>
+<tr class="separator:a5c42ea121c5a5dc7f55af6e4b674f3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a9edd389af7ffb441e79683dcc46c0c6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">retinaLength</a></td></tr>
+<tr class="separator:a9edd389af7ffb441e79683dcc46c0c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee120b03d2765facd259acd0dbff3b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">numBitsAddr</a></td></tr>
+<tr class="separator:a1ee120b03d2765facd259acd0dbff3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1516016b9fc5aad8cd4964e62e25f19c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">useBleaching</a></td></tr>
+<tr class="separator:a1516016b9fc5aad8cd4964e62e25f19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204dd3b1e83dbee8cff99d688c5270df"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">confidenceThreshold</a></td></tr>
+<tr class="separator:a204dd3b1e83dbee8cff99d688c5270df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88116bf45d047003738e615e207e7c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">defaultBleaching_b</a></td></tr>
+<tr class="separator:aa88116bf45d047003738e615e207e7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7629f73e79a6933209a34793bea0dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">randomizePositions</a></td></tr>
+<tr class="separator:a4f7629f73e79a6933209a34793bea0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf87dd58c293dc153202c78a0f9b7d04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">isCummulative</a></td></tr>
+<tr class="separator:abf87dd58c293dc153202c78a0f9b7d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac350d92b47501f4080bbf2e062531a91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">ignoreZeroAddr</a></td></tr>
+<tr class="separator:ac350d92b47501f4080bbf2e062531a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c662c19259d92f0c0f94b7532a0968"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a29c662c19259d92f0c0f94b7532a0968">seed</a></td></tr>
+<tr class="separator:a29c662c19259d92f0c0f94b7532a0968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49be07756a4963280261ba56171a9397"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a49be07756a4963280261ba56171a9397">discriminators</a></td></tr>
+<tr class="separator:a49be07756a4963280261ba56171a9397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520739d6b5e7b89e259a5e2a89d78edf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwann_1_1WiSARD.html#a520739d6b5e7b89e259a5e2a89d78edf">memoryAddressMapping</a></td></tr>
+<tr class="separator:a520739d6b5e7b89e259a5e2a89d78edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe responsável pela criação e gerenciamento de discriminadores associados a uma dada entrada e a uma configuração inicial da rede. Também responsável pela interface externa da biblioteca. </p>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a class="anchor" id="ab414f45976b8ae3ed0e9846348797aff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WiSARD::WiSARD </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>retinaLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numBitsAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useBleaching</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>confidenceThreshold</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultBleaching_b</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>randomizePositions</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isCummulative</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignoreZeroAddr</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor da classe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">retinaLength</td><td>Comprimento da retina. </td></tr>
+    <tr><td class="paramname">numBitsAddr</td><td>Número de bits a ser utilizado para endereçamento. </td></tr>
+    <tr><td class="paramname">useBleaching</td><td>Flag para sinalizar se deve-se ou não utilizar bleaching. </td></tr>
+    <tr><td class="paramname">confidenceThreshold</td><td>Valor limite para a confiança, que é a diferença percentual entre os dois melhores resultados da rede. </td></tr>
+    <tr><td class="paramname">defaultBleaching_b</td><td>Valor padrão para o bleaching. </td></tr>
+    <tr><td class="paramname">randomizePositions</td><td>Flag para sinalizar se o mapeamento da entrada deve ser randômico. </td></tr>
+    <tr><td class="paramname">isCummulative</td><td>Flag para sinalizar se o conteúdo das memórias associadas à rede é cumulativo. </td></tr>
+    <tr><td class="paramname">ignoreZeroAddr</td><td>Flag para sinalizar se o primeiro enedereço das memórias deve ser omitido na análise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Preenche o membro interno "memoryAddressMapping" com a sequência 0,1,2,3... até retinaLength. Caso randomizePositions seja verdadeiro, cria uma semente aleatória, baseada na hora atual, salva seu conteúdo no membro interno "seed" e a utiliza para embaralhar o conteúdo do vetor "memoryAddressMapping". </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e42ac67bc012126c510f8d09af933fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WiSARD::~WiSARD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destrutor da classe. </p>
+<p>Deleta dinâmicamente todos os objetos "discriminators" associados a <a class="el" href="classwann_1_1WiSARD.html">WiSARD</a> criada. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a class="anchor" id="a5c42ea121c5a5dc7f55af6e4b674f3e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unordered_map&lt; string, float &gt; WiSARD::applyBleaching </td>
+          <td>(</td>
+          <td class="paramtype">std::unordered_map&lt; std::string, float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, std::vector&lt; int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>memoryResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Responsável pela implmentação da técnica de bleaching. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>Unordered_map contendo a porcentagem de memórias ativadas para cada label de uma dada entrada. </td></tr>
+    <tr><td class="paramname">memoryResult</td><td>Vetor com o conteúdo de cada memória, endereçado por uma porção de bits de uma dada entrada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Unordered_map contendo a porcentagem de memórias ativadas para cada label de uma dada entrada com bleaching aplicado.</dd></dl>
+<p>Carrega o valor defaultBleaching_b em uma variável interna b. Em seguida, entra em um loop. Nele, realiza o mesmo cálculo que é feito no membro predictProba, com a diferença de que agora as memórias consideradas como ativadas são aquelas cujo conteúdo é maior que b. O membro ficará em loop enquanto a confiança for menor que o membro interno confidenceThresold. A cada loop, o bleaching, representado por b, é incrementado em uma unidade. Se o maior resultado das porcentagens das memórias for muito próximo de zero, para algum dado bleaching no loop, para o loop e retorna o valor inicial sem bleaching aplicado. </p>
+
+<p><div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classwann_1_1WiSARD_a5c42ea121c5a5dc7f55af6e4b674f3e5_cgraph.svg" width="475" height="91"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classwann_1_1WiSARD_a5c42ea121c5a5dc7f55af6e4b674f3e5_icgraph.svg" width="675" height="39"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c85d7e7ffc3919642249184d91f5740"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WiSARD::fit </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Método responsável pela criação e treinamento de objetos do tipo <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a>, associados as entradas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Matriz de inteiros, cada linha é uma entrada a ser treinada pela rede. </td></tr>
+    <tr><td class="paramname">y</td><td>Vetor de labels, deve existir exatamente uma label para cada entrada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Inicialmente, utiliza um mapa não ordenado para obter valores únicos das labels representadas pela entrada y. En seguida, cria um objeto <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a> para cada label e os armazena no membro interno discriminators. Após, treina cada <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a> com todos as entradas de X associadas à label daquele <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="af077c8ed75a22a62c290392c28944fd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; string &gt; WiSARD::predict </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>X</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seleciona uma label para cada entrada, na qual a label selecionado teve maior porcentagem de memórias ativadas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Matriz de inteiros, cada linha é uma entrada a ser classificada pela rede. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Vetor de strings, cada string representa a label na qual ocorreu maior porcentagem de memórias ativadas.</dd></dl>
+<p>Utiliza o membro predictProba para receber uma unordered_map contendo a porcentagem de memórias ativadas para cada label de uma linha do vetor de entrada. Em seguida, seleciona a label que obteve maior porcentagem de memórias ativadas. Após, adiciona esta label ao vetor a ser retornado, de predições. </p>
+
+<p><div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classwann_1_1WiSARD_af077c8ed75a22a62c290392c28944fd3_cgraph.svg" width="928" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1b34db8c0236ef3845a446be8f63111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; unordered_map&lt; string, float &gt; &gt; WiSARD::predictProba </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>X</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula a porcentagem de memórias ativadas para cada discriminador de cada entrada da matriz X. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Matriz de inteiros, cada linha é uma entrada a ser classificada pela rede. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Unordered_map contendo a porcentagem de memórias ativadas para cada label de cada entrada da matriz X.</dd></dl>
+<p>Para cada entrada a ser testada, chama o método predict de todos os discriminadores da rede. Este, retorna um vetor com os conteúdos das posições de memória associadas àquela entrada, por aquele discriminador. É considerado que uma memória do discriminador foi ativada caso seu conteúdo endereçado possua valor maior que zero. A métrica utilizada para a avaliação do discriminador é porcentagem de memórias ativadas. Obtendo esta quantidade, é criado um unordered map, result, contendo a porcentagem de memórias ativadas para cada label em relação à retina selecionada. Caso o membro interno "useBleaching" seja verdadeiro, chama o método applyBleaching sobre o result. Em seguida, este result é adicionado ao vetor de resultados a ser retornado. </p>
+
+<p><div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classwann_1_1WiSARD_ae1b34db8c0236ef3845a446be8f63111_cgraph.svg" width="719" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classwann_1_1WiSARD_ae1b34db8c0236ef3845a446be8f63111_icgraph.svg" width="416" height="39"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação dos campos e atributos</h2>
+<a class="anchor" id="a204dd3b1e83dbee8cff99d688c5270df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float wann::WiSARD::confidenceThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor limite para a confiança, que é a diferença percentual entre os dois melhores resultados da rede. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa88116bf45d047003738e615e207e7c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wann::WiSARD::defaultBleaching_b</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor padrão para o bleaching. </p>
+
+</div>
+</div>
+<a class="anchor" id="a49be07756a4963280261ba56171a9397"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a>*&gt; wann::WiSARD::discriminators</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mapa de objetos <a class="el" href="classwann_1_1Discriminator.html">Discriminator</a> associados ao objeto <a class="el" href="classwann_1_1WiSARD.html">WiSARD</a>; </p>
+
+</div>
+</div>
+<a class="anchor" id="ac350d92b47501f4080bbf2e062531a91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wann::WiSARD::ignoreZeroAddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag para sinalizar se o primeiro endereço das memórias deve ser omitido na análise. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf87dd58c293dc153202c78a0f9b7d04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wann::WiSARD::isCummulative</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag para sinalizar se o conteúdo das memórias associadas à rede é cumulativo. </p>
+
+</div>
+</div>
+<a class="anchor" id="a520739d6b5e7b89e259a5e2a89d78edf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; wann::WiSARD::memoryAddressMapping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Vetor auxiliar, utilizado para auxiliar o endereçamento da entrada. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ee120b03d2765facd259acd0dbff3b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wann::WiSARD::numBitsAddr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Número de bits a ser utilizado para endereçamento. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f7629f73e79a6933209a34793bea0dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wann::WiSARD::randomizePositions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag para sinalizar se o mapeamento da entrada deve ser randômico. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9edd389af7ffb441e79683dcc46c0c6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wann::WiSARD::retinaLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Comprimento da retina. </p>
+
+</div>
+</div>
+<a class="anchor" id="a29c662c19259d92f0c0f94b7532a0968"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned wann::WiSARD::seed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Semente aleatória utilizada para se embaralhar o endereçamento da entrada. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1516016b9fc5aad8cd4964e62e25f19c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wann::WiSARD::useBleaching</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag para sinalizar se deve-se ou não utilizar bleaching. </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>include/<a class="el" href="WiSARD_8hpp_source.html">WiSARD.hpp</a></li>
+<li>src/<a class="el" href="WiSARD_8cpp.html">WiSARD.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

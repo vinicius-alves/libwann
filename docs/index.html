@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>libwann: Página principal</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libwann
+   </div>
+   <div id="projectbrief">c++ Weightless Artificial Neural Network library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">libwann Documentação</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>c++ Weightless Artificial Neural Network library</p>
+<h2>Instructions</h2>
+<h2>How to Install</h2>
+<ol type="1">
+<li>git clone</li>
+<li>cd libwann</li>
+<li>make all (necessary clang++)</li>
+<li>sudo make install</li>
+</ol>
+<h2>How to Use</h2>
+<h3>WiSARD Signature</h3>
+<p>```c++</p>
+<p>WiSARD(int retinaLength, int numBitsAddr, bool useBleaching=true, float confidenceThreshold=0.1, int defaultBleaching_b=1, bool randomizePositions=true, bool isCummulative=true, bool ignoreZeroAddr=false); ```</p>
+<table class="doxtable">
+<tr>
+<th>Parameter </th><th>Description  </th></tr>
+<tr>
+<td>retinaLength </td><td>Length of Retina. </td></tr>
+<tr>
+<td>numBitsAddr </td><td>Number of bits to be used for addressing. </td></tr>
+<tr>
+<td>useBleaching </td><td>Flag to signal whether or not to use bleaching. </td></tr>
+<tr>
+<td>confidenceThreshold </td><td>Limit value for confidence. </td></tr>
+<tr>
+<td>defaultBleaching_b </td><td>Default value for bleaching. </td></tr>
+<tr>
+<td>randomizePositions </td><td>Flag to signal whether the input mapping should be random. </td></tr>
+<tr>
+<td>isCummulative </td><td>Flag to signal whether the content of the memories associated with the network is cumulative. </td></tr>
+<tr>
+<td>ignoreZeroAddr </td><td>Flag to signal if the first address of the memories should be omitted in the analysis. </td></tr>
+</table>
+<h3>How to Use</h3>
+<p>```c++</p>
+<p>#include &lt;wann/WiSARD.hpp&gt; #include &lt;iostream&gt;</p>
+<p>using namespace std; using namespace wann;</p>
+<p>int main(){ </p><pre class="fragment">vector&lt;vector&lt;int&gt;&gt; training_data = {
+    {1,0,1,
+     1,1,1,
+     1,0,1},
+
+    {1,1,1,
+     1,1,0,
+     1,0,0},
+
+    {1,1,1,
+     0,1,0,
+     0,1,0}
+};
+
+vector&lt;string&gt; training_labels = {"H","F","T"};
+
+vector&lt;vector&lt;int&gt;&gt; test_data ={
+    {1,1,1,
+     1,1,0,
+     0,1,0},
+
+    {1,0,0,
+     1,1,0,
+     1,0,1}
+};
+
+int retinaLength = training_data[0].size();
+int numBitsAddr = 3;
+
+WiSARD *w = new WiSARD(retinaLength, numBitsAddr);
+
+w-&gt;fit(training_data, training_labels);
+
+vector&lt;string&gt; result = w-&gt;predict(test_data);
+
+for (int i = 0; i&lt;test_data.size();i++){
+    cout&lt;&lt;"test_data["&lt;&lt;i&lt;&lt;"] seems to be a "&lt;&lt;result[i]&lt;&lt;endl;
+}
+
+/*The ouput must be:
+  test_data[0] seems to be a T
+  test_data[1] seems to be a H
+*/
+
+delete w;
+
+return 0;
+</pre><p> }</p>
+<p>``` To compile projects with libwann use:</p>
+<p>``` clang++ main_source.cpp -o executable_name -std=c++11 -lwann -g -O2 -fpic <code> To generate autodocumentation you will need</code>Doxygen<code>and</code>Graphviz<code>. With that, just run: </code> doxygen config.doxyfile ``` </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

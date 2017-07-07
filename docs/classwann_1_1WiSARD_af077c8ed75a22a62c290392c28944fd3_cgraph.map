@@ -1,0 +1,8 @@
+<map id="wann::WiSARD::predict" name="wann::WiSARD::predict">
+<area shape="rect" id="node2" href="$classwann_1_1WiSARD.html#ae1b34db8c0236ef3845a446be8f63111" title="Calcula a porcentagem de memórias ativadas para cada discriminador de cada entrada da matriz X..." alt="" coords="214,43,410,71"/>
+<area shape="rect" id="node7" href="$namespacewann_1_1util.html#a75206e4eb67cb7e418fa0acf03ebfc0f" title="Seleciona a label com maior porcentagem de acertos. " alt="" coords="247,95,377,123"/>
+<area shape="rect" id="node3" href="$classwann_1_1Discriminator.html#ad94e68e33ebbee6cb52896a5f2503118" title="Recebe uma retina e a partir dela, retorna um vetor com os conteúdos das memórias associadas..." alt="" coords="494,5,633,49"/>
+<area shape="rect" id="node4" href="$classwann_1_1WiSARD.html#a5c42ea121c5a5dc7f55af6e4b674f3e5" title="Responsável pela implmentação da técnica de bleaching. " alt="" coords="458,73,669,101"/>
+<area shape="rect" id="node5" href="$namespacewann_1_1util.html#a8d7912c21a484f6a7aaee40e79eb9cbf" title="Calcula a confiança do resultado do processamento de uma WiSARD. " alt="" coords="717,47,922,75"/>
+<area shape="rect" id="node6" href="$namespacewann_1_1util.html#ae68517805514787cde65a25b4435a727" title="Obtém o maior valor de porcentagem de acertos de uma dada entrada. " alt="" coords="747,99,892,127"/>
+</map>

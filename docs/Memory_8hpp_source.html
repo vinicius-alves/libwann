@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>libwann: Código-Fonte de include/Memory.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libwann
+   </div>
+   <div id="projectbrief">c++ Weightless Artificial Neural Network library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Memory.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Memory_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef MEMORY_CPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MEMORY_CPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewann.html">wann</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwann_1_1Memory.html">Memory</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="classwann_1_1Memory.html#ad75841ab9e6a678d0ffe69d6ba035134">Memory</a>(<span class="keywordtype">int</span> <a class="code" href="classwann_1_1Memory.html#ac62abd6a84b2413ac43cc880c7985b6d">numBits</a>, <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Memory.html#a305326be837efca01c4cd3d2f683a482">isCummulative</a>, <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Memory.html#a440cceaf0edcdfc65c32f33a5b1cb40d">ignoreZeroAddr</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classwann_1_1Memory.html#ada76c6120d54e8470ffe0d876f495823">~Memory</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classwann_1_1Memory.html#a43356a31dd186bc9e2961b318eafca79">addValue</a>(<span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> addr, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1Memory.html#acdb779c0abfc6086173622d9881308f0">getValue</a>(<span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> addr);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html#a0353d8723edb9dd50b49a335e9c584b2">   50</a></span>&#160;            std::unordered_map&lt;long long, int&gt; <a class="code" href="classwann_1_1Memory.html#a0353d8723edb9dd50b49a335e9c584b2">data</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html#a5b9e9d4817b40f037bd614cd91bc4a65">   52</a></span>&#160;            <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="classwann_1_1Memory.html#a5b9e9d4817b40f037bd614cd91bc4a65">numAddrs</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html#ac62abd6a84b2413ac43cc880c7985b6d">   54</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1Memory.html#ac62abd6a84b2413ac43cc880c7985b6d">numBits</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html#a305326be837efca01c4cd3d2f683a482">   56</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Memory.html#a305326be837efca01c4cd3d2f683a482">isCummulative</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classwann_1_1Memory.html#a440cceaf0edcdfc65c32f33a5b1cb40d">   58</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Memory.html#a440cceaf0edcdfc65c32f33a5b1cb40d">ignoreZeroAddr</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MEMORY_CPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classwann_1_1Memory_html_a43356a31dd186bc9e2961b318eafca79"><div class="ttname"><a href="classwann_1_1Memory.html#a43356a31dd186bc9e2961b318eafca79">wann::Memory::addValue</a></div><div class="ttdeci">void addValue(const long long addr, int value)</div><div class="ttdoc">A partir de um endereço, incrementa o conteúdo associado. </div><div class="ttdef"><b>Definition:</b> Memory.cpp:48</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_a5b9e9d4817b40f037bd614cd91bc4a65"><div class="ttname"><a href="classwann_1_1Memory.html#a5b9e9d4817b40f037bd614cd91bc4a65">wann::Memory::numAddrs</a></div><div class="ttdeci">long long numAddrs</div><div class="ttdef"><b>Definition:</b> Memory.hpp:52</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_a305326be837efca01c4cd3d2f683a482"><div class="ttname"><a href="classwann_1_1Memory.html#a305326be837efca01c4cd3d2f683a482">wann::Memory::isCummulative</a></div><div class="ttdeci">bool isCummulative</div><div class="ttdef"><b>Definition:</b> Memory.hpp:56</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_acdb779c0abfc6086173622d9881308f0"><div class="ttname"><a href="classwann_1_1Memory.html#acdb779c0abfc6086173622d9881308f0">wann::Memory::getValue</a></div><div class="ttdeci">int getValue(const long long addr)</div><div class="ttdoc">A partir de um endereço, retorna o conteúdo associado. </div><div class="ttdef"><b>Definition:</b> Memory.cpp:81</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_a440cceaf0edcdfc65c32f33a5b1cb40d"><div class="ttname"><a href="classwann_1_1Memory.html#a440cceaf0edcdfc65c32f33a5b1cb40d">wann::Memory::ignoreZeroAddr</a></div><div class="ttdeci">bool ignoreZeroAddr</div><div class="ttdef"><b>Definition:</b> Memory.hpp:58</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_ad75841ab9e6a678d0ffe69d6ba035134"><div class="ttname"><a href="classwann_1_1Memory.html#ad75841ab9e6a678d0ffe69d6ba035134">wann::Memory::Memory</a></div><div class="ttdeci">Memory(int numBits, bool isCummulative, bool ignoreZeroAddr)</div><div class="ttdoc">Construtor da Classe. </div><div class="ttdef"><b>Definition:</b> Memory.cpp:20</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_a0353d8723edb9dd50b49a335e9c584b2"><div class="ttname"><a href="classwann_1_1Memory.html#a0353d8723edb9dd50b49a335e9c584b2">wann::Memory::data</a></div><div class="ttdeci">std::unordered_map&lt; long long, int &gt; data</div><div class="ttdef"><b>Definition:</b> Memory.hpp:50</div></div>
+<div class="ttc" id="namespacewann_html"><div class="ttname"><a href="namespacewann.html">wann</a></div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:15</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_ada76c6120d54e8470ffe0d876f495823"><div class="ttname"><a href="classwann_1_1Memory.html#ada76c6120d54e8470ffe0d876f495823">wann::Memory::~Memory</a></div><div class="ttdeci">~Memory(void)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:34</div></div>
+<div class="ttc" id="classwann_1_1Memory_html_ac62abd6a84b2413ac43cc880c7985b6d"><div class="ttname"><a href="classwann_1_1Memory.html#ac62abd6a84b2413ac43cc880c7985b6d">wann::Memory::numBits</a></div><div class="ttdeci">int numBits</div><div class="ttdef"><b>Definition:</b> Memory.hpp:54</div></div>
+<div class="ttc" id="classwann_1_1Memory_html"><div class="ttname"><a href="classwann_1_1Memory.html">wann::Memory</a></div><div class="ttdef"><b>Definition:</b> Memory.hpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

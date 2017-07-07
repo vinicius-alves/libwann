@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>libwann: Código-Fonte de include/WiSARD.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libwann
+   </div>
+   <div id="projectbrief">c++ Weightless Artificial Neural Network library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">WiSARD.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="WiSARD_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef WISARD_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define WISARD_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Discriminator_8hpp.html">./Discriminator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewann.html">wann</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwann_1_1WiSARD.html">WiSARD</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classwann_1_1WiSARD.html#ab414f45976b8ae3ed0e9846348797aff">WiSARD</a>(<span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">retinaLength</a>, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">numBitsAddr</a>, </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                   <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">useBleaching</a>=<span class="keyword">true</span>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                   <span class="keywordtype">float</span> <a class="code" href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">confidenceThreshold</a>=0.1, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                   <span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">defaultBleaching_b</a>=1, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                   <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">randomizePositions</a>=<span class="keyword">true</span>, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                   <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">isCummulative</a>=<span class="keyword">true</span>, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                   <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">ignoreZeroAddr</a>=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="classwann_1_1WiSARD.html#a8e42ac67bc012126c510f8d09af933fd">~WiSARD</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classwann_1_1WiSARD.html#a3c85d7e7ffc3919642249184d91f5740">fit</a>(<span class="keyword">const</span> std::vector&lt; std::vector&lt;int&gt; &gt; &amp;X, <span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;y);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            std::vector&lt;std::string&gt; <a class="code" href="classwann_1_1WiSARD.html#af077c8ed75a22a62c290392c28944fd3">predict</a>(<span class="keyword">const</span> std::vector&lt; std::vector&lt;int&gt; &gt; &amp;X);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            std::vector&lt;std::unordered_map&lt;std::string, float&gt;&gt; <a class="code" href="classwann_1_1WiSARD.html#ae1b34db8c0236ef3845a446be8f63111">predictProba</a>(<span class="keyword">const</span> std::vector&lt;std::vector&lt;int&gt; &gt; &amp;X);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">   76</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">retinaLength</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">   78</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">numBitsAddr</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">   80</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">useBleaching</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">   82</a></span>&#160;            <span class="keywordtype">float</span> <a class="code" href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">confidenceThreshold</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">   84</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">defaultBleaching_b</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">   86</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">randomizePositions</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">   88</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">isCummulative</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">   90</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">ignoreZeroAddr</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a29c662c19259d92f0c0f94b7532a0968">   92</a></span>&#160;            <span class="keywordtype">unsigned</span> <a class="code" href="classwann_1_1WiSARD.html#a29c662c19259d92f0c0f94b7532a0968">seed</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a49be07756a4963280261ba56171a9397">   94</a></span>&#160;            std::unordered_map &lt;std::string, Discriminator*&gt; <a class="code" href="classwann_1_1WiSARD.html#a49be07756a4963280261ba56171a9397">discriminators</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classwann_1_1WiSARD.html#a520739d6b5e7b89e259a5e2a89d78edf">   96</a></span>&#160;            std::vector&lt;int&gt; <a class="code" href="classwann_1_1WiSARD.html#a520739d6b5e7b89e259a5e2a89d78edf">memoryAddressMapping</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            std::unordered_map &lt;std::string,float&gt; <a class="code" href="classwann_1_1WiSARD.html#a5c42ea121c5a5dc7f55af6e4b674f3e5">applyBleaching</a>(std::unordered_map&lt;std::string,float&gt; &amp;result,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                std::unordered_map&lt;std::string, std::vector&lt;int&gt;&gt; &amp;memoryResult);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WISARD_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_ae1b34db8c0236ef3845a446be8f63111"><div class="ttname"><a href="classwann_1_1WiSARD.html#ae1b34db8c0236ef3845a446be8f63111">wann::WiSARD::predictProba</a></div><div class="ttdeci">std::vector&lt; std::unordered_map&lt; std::string, float &gt; &gt; predictProba(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X)</div><div class="ttdoc">Calcula a porcentagem de memórias ativadas para cada discriminador de cada entrada da matriz X...</div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:119</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a49be07756a4963280261ba56171a9397"><div class="ttname"><a href="classwann_1_1WiSARD.html#a49be07756a4963280261ba56171a9397">wann::WiSARD::discriminators</a></div><div class="ttdeci">std::unordered_map&lt; std::string, Discriminator * &gt; discriminators</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:94</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_ab414f45976b8ae3ed0e9846348797aff"><div class="ttname"><a href="classwann_1_1WiSARD.html#ab414f45976b8ae3ed0e9846348797aff">wann::WiSARD::WiSARD</a></div><div class="ttdeci">WiSARD(int retinaLength, int numBitsAddr, bool useBleaching=true, float confidenceThreshold=0.1, int defaultBleaching_b=1, bool randomizePositions=true, bool isCummulative=true, bool ignoreZeroAddr=false)</div><div class="ttdoc">Construtor da classe. </div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:28</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a1ee120b03d2765facd259acd0dbff3b1"><div class="ttname"><a href="classwann_1_1WiSARD.html#a1ee120b03d2765facd259acd0dbff3b1">wann::WiSARD::numBitsAddr</a></div><div class="ttdeci">int numBitsAddr</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:78</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a520739d6b5e7b89e259a5e2a89d78edf"><div class="ttname"><a href="classwann_1_1WiSARD.html#a520739d6b5e7b89e259a5e2a89d78edf">wann::WiSARD::memoryAddressMapping</a></div><div class="ttdeci">std::vector&lt; int &gt; memoryAddressMapping</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:96</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_ac350d92b47501f4080bbf2e062531a91"><div class="ttname"><a href="classwann_1_1WiSARD.html#ac350d92b47501f4080bbf2e062531a91">wann::WiSARD::ignoreZeroAddr</a></div><div class="ttdeci">bool ignoreZeroAddr</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:90</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a204dd3b1e83dbee8cff99d688c5270df"><div class="ttname"><a href="classwann_1_1WiSARD.html#a204dd3b1e83dbee8cff99d688c5270df">wann::WiSARD::confidenceThreshold</a></div><div class="ttdeci">float confidenceThreshold</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:82</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a29c662c19259d92f0c0f94b7532a0968"><div class="ttname"><a href="classwann_1_1WiSARD.html#a29c662c19259d92f0c0f94b7532a0968">wann::WiSARD::seed</a></div><div class="ttdeci">unsigned seed</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:92</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a4f7629f73e79a6933209a34793bea0dd"><div class="ttname"><a href="classwann_1_1WiSARD.html#a4f7629f73e79a6933209a34793bea0dd">wann::WiSARD::randomizePositions</a></div><div class="ttdeci">bool randomizePositions</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:86</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html"><div class="ttname"><a href="classwann_1_1WiSARD.html">wann::WiSARD</a></div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:24</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a9edd389af7ffb441e79683dcc46c0c6d"><div class="ttname"><a href="classwann_1_1WiSARD.html#a9edd389af7ffb441e79683dcc46c0c6d">wann::WiSARD::retinaLength</a></div><div class="ttdeci">int retinaLength</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:76</div></div>
+<div class="ttc" id="namespacewann_html"><div class="ttname"><a href="namespacewann.html">wann</a></div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:15</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a5c42ea121c5a5dc7f55af6e4b674f3e5"><div class="ttname"><a href="classwann_1_1WiSARD.html#a5c42ea121c5a5dc7f55af6e4b674f3e5">wann::WiSARD::applyBleaching</a></div><div class="ttdeci">std::unordered_map&lt; std::string, float &gt; applyBleaching(std::unordered_map&lt; std::string, float &gt; &amp;result, std::unordered_map&lt; std::string, std::vector&lt; int &gt;&gt; &amp;memoryResult)</div><div class="ttdoc">Responsável pela implmentação da técnica de bleaching. </div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:200</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a1516016b9fc5aad8cd4964e62e25f19c"><div class="ttname"><a href="classwann_1_1WiSARD.html#a1516016b9fc5aad8cd4964e62e25f19c">wann::WiSARD::useBleaching</a></div><div class="ttdeci">bool useBleaching</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:80</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a3c85d7e7ffc3919642249184d91f5740"><div class="ttname"><a href="classwann_1_1WiSARD.html#a3c85d7e7ffc3919642249184d91f5740">wann::WiSARD::fit</a></div><div class="ttdeci">void fit(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X, const std::vector&lt; std::string &gt; &amp;y)</div><div class="ttdoc">Método responsável pela criação e treinamento de objetos do tipo Discriminator, associados as entrada...</div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:76</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_af077c8ed75a22a62c290392c28944fd3"><div class="ttname"><a href="classwann_1_1WiSARD.html#af077c8ed75a22a62c290392c28944fd3">wann::WiSARD::predict</a></div><div class="ttdeci">std::vector&lt; std::string &gt; predict(const std::vector&lt; std::vector&lt; int &gt; &gt; &amp;X)</div><div class="ttdoc">Seleciona uma label para cada entrada, na qual a label selecionado teve maior porcentagem de memórias...</div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:174</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_a8e42ac67bc012126c510f8d09af933fd"><div class="ttname"><a href="classwann_1_1WiSARD.html#a8e42ac67bc012126c510f8d09af933fd">wann::WiSARD::~WiSARD</a></div><div class="ttdeci">~WiSARD(void)</div><div class="ttdoc">Destrutor da classe. </div><div class="ttdef"><b>Definition:</b> WiSARD.cpp:61</div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_aa88116bf45d047003738e615e207e7c7"><div class="ttname"><a href="classwann_1_1WiSARD.html#aa88116bf45d047003738e615e207e7c7">wann::WiSARD::defaultBleaching_b</a></div><div class="ttdeci">int defaultBleaching_b</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:84</div></div>
+<div class="ttc" id="Discriminator_8hpp_html"><div class="ttname"><a href="Discriminator_8hpp.html">Discriminator.hpp</a></div><div class="ttdoc">Arquivo de declaração da classe Discriminator. </div></div>
+<div class="ttc" id="classwann_1_1WiSARD_html_abf87dd58c293dc153202c78a0f9b7d04"><div class="ttname"><a href="classwann_1_1WiSARD.html#abf87dd58c293dc153202c78a0f9b7d04">wann::WiSARD::isCummulative</a></div><div class="ttdeci">bool isCummulative</div><div class="ttdef"><b>Definition:</b> WiSARD.hpp:88</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

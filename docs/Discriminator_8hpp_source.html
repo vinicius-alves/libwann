@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>libwann: Código-Fonte de include/Discriminator.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">libwann
+   </div>
+   <div id="projectbrief">c++ Weightless Artificial Neural Network library</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Discriminator.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Discriminator_8hpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DISCRIMINATOR_HPP_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DISCRIMINATOR_HPP_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Memory_8hpp.html">./Memory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacewann.html">   15</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacewann.html">wann</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html">   24</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classwann_1_1Discriminator.html">Discriminator</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="classwann_1_1Discriminator.html#a6198724b94dcf8ab16257f1f357cc010">Discriminator</a>(<span class="keywordtype">int</span> <a class="code" href="classwann_1_1Discriminator.html#a81b41c85bdb3e5406202c548965ee2fd">retinaLength</a>, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                          <span class="keywordtype">int</span> numBits, </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                          std::vector&lt;int&gt; <a class="code" href="classwann_1_1Discriminator.html#ae571ba555c2dd963238cfe9437509c80">memoryAddressMapping</a>, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                          <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Discriminator.html#a131bae16fc79e8153d0975debf68c9ba">isCummulative</a> = <span class="keyword">true</span>, </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                          <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Discriminator.html#a8af744609b381495f3c0949cbedf387c">ignoreZeroAddr</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="classwann_1_1Discriminator.html#a9de1ed7a82e5bb40bba40f7c2159824c">~Discriminator</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classwann_1_1Discriminator.html#af959c3f0a80c45de42caefa60d051f0f">addTrainning</a>(<span class="keyword">const</span> std::vector&lt;int&gt; &amp;retina);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            std::vector&lt;int&gt; <a class="code" href="classwann_1_1Discriminator.html#ad94e68e33ebbee6cb52896a5f2503118">predict</a>(<span class="keyword">const</span> std::vector&lt;int&gt; &amp;retina);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#a81b41c85bdb3e5406202c548965ee2fd">   62</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1Discriminator.html#a81b41c85bdb3e5406202c548965ee2fd">retinaLength</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#ac763dd8ca066256c53036c57377f44c7">   64</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1Discriminator.html#ac763dd8ca066256c53036c57377f44c7">numBitsAddr</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#a9290fd1320fc0c5347b0c8c7f104d51d">   66</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classwann_1_1Discriminator.html#a9290fd1320fc0c5347b0c8c7f104d51d">numMemories</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#a131bae16fc79e8153d0975debf68c9ba">   68</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Discriminator.html#a131bae16fc79e8153d0975debf68c9ba">isCummulative</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#a8af744609b381495f3c0949cbedf387c">   70</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classwann_1_1Discriminator.html#a8af744609b381495f3c0949cbedf387c">ignoreZeroAddr</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#a02ce21bdcd519cb1104fb29d56412be5">   72</a></span>&#160;            std::vector&lt;Memory *&gt; <a class="code" href="classwann_1_1Discriminator.html#a02ce21bdcd519cb1104fb29d56412be5">memories</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classwann_1_1Discriminator.html#ae571ba555c2dd963238cfe9437509c80">   74</a></span>&#160;            std::vector&lt;int&gt; <a class="code" href="classwann_1_1Discriminator.html#ae571ba555c2dd963238cfe9437509c80">memoryAddressMapping</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">//Memory * getMemory(int addr);</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DISCRIMINATOR_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classwann_1_1Discriminator_html"><div class="ttname"><a href="classwann_1_1Discriminator.html">wann::Discriminator</a></div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:24</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a8af744609b381495f3c0949cbedf387c"><div class="ttname"><a href="classwann_1_1Discriminator.html#a8af744609b381495f3c0949cbedf387c">wann::Discriminator::ignoreZeroAddr</a></div><div class="ttdeci">bool ignoreZeroAddr</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:70</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a9290fd1320fc0c5347b0c8c7f104d51d"><div class="ttname"><a href="classwann_1_1Discriminator.html#a9290fd1320fc0c5347b0c8c7f104d51d">wann::Discriminator::numMemories</a></div><div class="ttdeci">int numMemories</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:66</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_ad94e68e33ebbee6cb52896a5f2503118"><div class="ttname"><a href="classwann_1_1Discriminator.html#ad94e68e33ebbee6cb52896a5f2503118">wann::Discriminator::predict</a></div><div class="ttdeci">std::vector&lt; int &gt; predict(const std::vector&lt; int &gt; &amp;retina)</div><div class="ttdoc">Recebe uma retina e a partir dela, retorna um vetor com os conteúdos das memórias associadas...</div><div class="ttdef"><b>Definition:</b> Discriminator.cpp:123</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_af959c3f0a80c45de42caefa60d051f0f"><div class="ttname"><a href="classwann_1_1Discriminator.html#af959c3f0a80c45de42caefa60d051f0f">wann::Discriminator::addTrainning</a></div><div class="ttdeci">void addTrainning(const std::vector&lt; int &gt; &amp;retina)</div><div class="ttdoc">Treina o discriminador com uma entrada retina. </div><div class="ttdef"><b>Definition:</b> Discriminator.cpp:72</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_ac763dd8ca066256c53036c57377f44c7"><div class="ttname"><a href="classwann_1_1Discriminator.html#ac763dd8ca066256c53036c57377f44c7">wann::Discriminator::numBitsAddr</a></div><div class="ttdeci">int numBitsAddr</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:64</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a6198724b94dcf8ab16257f1f357cc010"><div class="ttname"><a href="classwann_1_1Discriminator.html#a6198724b94dcf8ab16257f1f357cc010">wann::Discriminator::Discriminator</a></div><div class="ttdeci">Discriminator(int retinaLength, int numBits, std::vector&lt; int &gt; memoryAddressMapping, bool isCummulative=true, bool ignoreZeroAddr=false)</div><div class="ttdoc">Construtor da classe. </div><div class="ttdef"><b>Definition:</b> Discriminator.cpp:25</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a131bae16fc79e8153d0975debf68c9ba"><div class="ttname"><a href="classwann_1_1Discriminator.html#a131bae16fc79e8153d0975debf68c9ba">wann::Discriminator::isCummulative</a></div><div class="ttdeci">bool isCummulative</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:68</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a9de1ed7a82e5bb40bba40f7c2159824c"><div class="ttname"><a href="classwann_1_1Discriminator.html#a9de1ed7a82e5bb40bba40f7c2159824c">wann::Discriminator::~Discriminator</a></div><div class="ttdeci">~Discriminator(void)</div><div class="ttdoc">Destrutor da classe. </div><div class="ttdef"><b>Definition:</b> Discriminator.cpp:58</div></div>
+<div class="ttc" id="namespacewann_html"><div class="ttname"><a href="namespacewann.html">wann</a></div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:15</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a02ce21bdcd519cb1104fb29d56412be5"><div class="ttname"><a href="classwann_1_1Discriminator.html#a02ce21bdcd519cb1104fb29d56412be5">wann::Discriminator::memories</a></div><div class="ttdeci">std::vector&lt; Memory * &gt; memories</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:72</div></div>
+<div class="ttc" id="Memory_8hpp_html"><div class="ttname"><a href="Memory_8hpp.html">Memory.hpp</a></div><div class="ttdoc">Arquivo de declaração da classe Memory. </div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_a81b41c85bdb3e5406202c548965ee2fd"><div class="ttname"><a href="classwann_1_1Discriminator.html#a81b41c85bdb3e5406202c548965ee2fd">wann::Discriminator::retinaLength</a></div><div class="ttdeci">int retinaLength</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:62</div></div>
+<div class="ttc" id="classwann_1_1Discriminator_html_ae571ba555c2dd963238cfe9437509c80"><div class="ttname"><a href="classwann_1_1Discriminator.html#ae571ba555c2dd963238cfe9437509c80">wann::Discriminator::memoryAddressMapping</a></div><div class="ttdeci">std::vector&lt; int &gt; memoryAddressMapping</div><div class="ttdef"><b>Definition:</b> Discriminator.hpp:74</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>
